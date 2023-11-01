@@ -1,0 +1,349 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Black+Han+Sans&display=swap');
+@font-face {
+  font-family: 'PyeongChangPeace-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  max-width: 1920px;
+  max-height: 1080px;
+  overflow: hidden;
+} 
+
+
+.wrap{
+  animation: op2 2s forwards;
+  position: relative;
+  background: url("/img/bg4.png");
+}
+
+@keyframes op2 {
+    100% {
+        opacity: 100;
+    }
+}
+/* ========================헤더 영역======================== */
+.header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  border-radius: 2px;
+  z-index: 10;
+}
+.header .container{
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  height: 4rem;
+}
+.header .container .logo{
+  position: absolute;
+  left: 10rem;
+  top: 3rem;
+}
+.header .container .logo a{
+  color: #333;
+}
+
+.header .container nav{}
+
+.header .container nav ul{
+  position: relative;
+  margin-left: 15%;
+  width: 70%;
+  text-align: center;
+}
+.header .container nav ul::before{
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width: 0%;
+  border-bottom:1px solid #fff;
+  animation: header 3s forwards;
+}
+
+@keyframes header {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.header .container nav ul li{
+  display: inline-block; 
+  line-height: 3.5rem;
+  padding: 0 5rem;
+}
+.header .container nav ul li a{
+  font-size: 2rem;
+}
+.header .container nav ul li a{
+  font-family: 'Abril Fatface', serif;
+  letter-spacing: 0.1em;
+}
+
+.header .container nav ul li a:hover{}
+
+.header .container .dim{
+  position: absolute;
+  top: 105%;
+  right: 50%;
+}
+
+/* ========================메인영역======================== */
+
+main{}
+main .container{
+  width: 100%;
+  height: 1080px;
+  position: relative;
+}
+main .container .content1{
+  display: inline-block;
+  margin-top: -2rem;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  margin-bottom: 16rem;
+  /* border: red 1px solid; */
+}
+main .container .content1 .content_text{
+  font-size: 4rem;
+  font-family: 'Black Han Sans', sans-serif;
+  line-height: 6rem;
+  padding-top: 10rem;
+  padding-left: 20rem;
+}
+main .container .content1 span{
+  color: rgb(255, 140, 57);
+  font-family: 'PyeongChangPeace-Bold';
+}
+
+
+/* footer 영역 */
+footer{
+  position: relative;
+  bottom: 290px;
+  background-color: #333;
+}
+footer .container {
+  padding: 20px;
+  text-align: center;
+  line-height: 200%;
+  font-size: 14px;
+}
+
+
+/* 슬라이드 영역 */
+
+
+.swiper {
+  width: 450px;
+  height: 600px;
+  left: 20%;
+  bottom: 110%;
+  z-index: 3;
+}
+
+.swiper-slide {
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.swiper-slide:nth-child(1n) {
+  background-color: #333;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: #555;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: #444;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: #666;
+}
+
+/* 슬라이드 내부 영역 */
+.container .swiper-wrapper .profile{}
+.container .swiper-wrapper .skill{}
+
+
+/* 별똥별 영역 */
+#early2021 {
+  position: absolute;
+
+}
+
+#early2021 .inner {
+}
+
+#early2021 .top {
+  background: none
+}
+
+#early2021 .top .inner {
+  height: 962px;
+}
+
+#early2021 .top .main_img {
+  position: absolute;
+  z-index: 5;
+  opacity: 0;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+
+#early2021 .top .pacles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+#early2021 .top .c1_s img {
+  position: absolute;
+  animation: star 10s linear infinite;
+  margin-left: 0;
+  margin-top: 0;
+  opacity: 0;
+}
+
+#early2021 .top .c1_s img:nth-child(1) {
+  animation-delay: 2;
+  animation-duration: 3.2s
+}
+
+#early2021 .top .c1_s img:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 2.8s
+}
+
+#early2021 .top .c1_s img:nth-child(3) {
+  animation-delay: -1.4s;
+  animation-duration: 2.4s
+}
+
+#early2021 .top .c1_s img:nth-child(4) {
+  animation-delay: -2s;
+  animation-duration: 2s
+}
+
+#early2021 .top .c1_s img:nth-child(5) {
+  animation-delay: 0.8s;
+  animation-duration: 4s
+}
+
+#early2021 .top .c1_s img:nth-child(6) {
+  animation-delay: -4s;
+  animation-duration: 3.6s
+}
+
+#early2021 .top .c1_s img:nth-child(7) {
+  animation-delay: -1s;
+  animation-duration: 2.4s
+}
+
+#early2021 .top .c1_s img:nth-child(8) {
+  animation-delay: -1.2s;
+  animation-duration: 2s
+}
+#early2021 .top .c1_s img:nth-child(9) {
+  animation-delay: 2;
+  animation-duration: 3.2s
+}
+
+#early2021 .top .c1_s img:nth-child(10) {
+  animation-delay: -3s;
+  animation-duration: 2.8s
+}
+
+#early2021 .top .c1_s img:nth-child(11) {
+  animation-delay: -1.4s;
+  animation-duration: 2.4s
+}
+
+#early2021 .top .c1_s img:nth-child(12) {
+  animation-delay: -2s;
+  animation-duration: 2s
+}
+
+#early2021 .top .c1_s img:nth-child(13) {
+  animation-delay: 0.8s;
+  animation-duration: 4s
+}
+
+#early2021 .top .c1_s img:nth-child(14) {
+  animation-delay: -4s;
+  animation-duration: 3.6s
+}
+
+#early2021 .top .c1_s img:nth-child(15) {
+  animation-delay: -1s;
+  animation-duration: 2.4s
+}
+
+#early2021 .top .c1_s img:nth-child(16) {
+  animation-delay: -1.2s;
+  animation-duration: 2s
+}
+
+@keyframes star {
+  from {
+    opacity: 0;
+    margin-left: 0;
+    margin-top: 0
+  }
+
+  25% {
+    opacity: 1;
+    margin-left: -5%;
+    margin-top: 5%
+  }
+
+  70% {
+    opacity: 0;
+    margin-left: -10%;
+    margin-top: 10%
+  }
+
+  to {
+    opacity: 0;
+    margin-left: -10%;
+    margin-top: 10%
+  }
+}

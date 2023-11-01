@@ -1,0 +1,122 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=========== header 영역=========== */
+.header{
+  }
+.header .container{
+  width: 100%;
+  height: 7rem;
+  border: 1px solid #333;
+  margin: 7rem auto 10px;
+  position: relative;
+}
+.header .container .logo{
+  position: absolute;
+  left: 10rem;
+  top: -5rem;
+}
+.header .container nav{}
+.header .container nav ul{
+  padding-left: 25rem;
+}
+.header .container nav ul .first{
+  
+}
+.header .container nav ul li{
+  float: left;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  padding-left: 10rem;
+}
+.header .container nav ul li a{}
+
+/* =========== main 영역 ===========  */
+main{}
+main .container{
+  width: 100%;
+  height: 100%;
+  background: #737ae4;
+}
+main .container .section1{}
+main .container .section2{}
+main .container .section3{}
+main .container .section4{}
+
+
+/* 슬라이드 실험용!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: rgb(54, 94, 77);
+}

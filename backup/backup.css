@@ -1,0 +1,252 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Black+Han+Sans&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+} 
+
+
+.wrap{
+  background: #215687;
+  max-width: 1920px;
+  max-height: 1080px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: op2 2s forwards;
+  position: relative;
+}
+
+@keyframes op2 {
+    100% {
+        opacity: 100;
+    }
+}
+
+.wrap .back-img1{
+  position: absolute;
+  right: -500px;
+  top: -200px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 1000px;
+  height: 100%;
+  background: url("/img/block.png") no-repeat;
+  animation: bk1 30s infinite;
+}
+
+@keyframes bk1 {
+    0%{
+      rotate: 0deg;
+    }
+    50%{
+      rotate: 10deg;
+    }
+    100%{
+      rotate: 0deg;
+    }
+}
+
+.wrap .back-img2{
+  position: absolute;
+  left: -500px;
+  bottom: -100;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 1000px;
+  height: 100%;
+  background: url("/img/block.png") no-repeat;
+  rotate: 210deg;
+  animation: bk2 30s infinite;
+}
+@keyframes bk2 {
+  0%{
+    rotate: 210deg;
+  }
+  50%{
+    rotate: 220deg;
+  }
+  100%{
+    rotate: 210deg;
+  }
+}
+
+/* ========================헤더 영역======================== */
+.header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  z-index: 10;
+}
+.header .container{
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  height: 4rem;
+}
+.header .container .logo{
+  position: absolute;
+  left: 10rem;
+  top: 3rem;
+}
+.header .container .logo a{
+  color: #333;
+}
+
+.header .container nav{}
+
+.header .container nav ul{
+  position: relative;
+  margin-left: 15%;
+  width: 70%;
+  text-align: center;
+}
+.header .container nav ul::before{
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width: 0%;
+  border-bottom:1px solid #fff;
+  animation: header 3s forwards;
+}
+@keyframes header {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+.header .container nav ul .first{}
+
+.header .container nav ul li{
+  display: inline-block; 
+  line-height: 3.5rem;
+  padding: 0 5rem;
+}
+.header .container nav ul li a{
+  font-size: 2rem;
+}
+.header .container nav ul li a{
+  font-family: 'Abril Fatface', serif;
+  letter-spacing: 0.1em;
+}
+
+.header .container nav ul li a:hover{}
+
+.header .container .dim{
+  position: absolute;
+  top: 102%;
+  right: 50%;
+}
+
+/* ========================메인영역======================== */
+
+main{}
+main .container{
+  width: 100%;
+  max-height: 1500px;
+  height: 100%;
+  position: relative;
+}
+main .container .content1{
+  margin-top: -2rem;
+  width: 60%;
+  height: 13%;
+  padding-bottom: 200px;
+  border-radius: 100px;
+  z-index: 2;
+  /* border: red 1px solid; */
+}
+main .container .content1 .content_text{
+  font-size: 4rem;
+  font-family: 'Black Han Sans', sans-serif;
+  line-height: 9rem;
+  padding-top: 10rem;
+  padding-left: 20rem;
+}
+main .container .content1 span{
+  color: rgb(255, 140, 57);
+}
+
+
+/* footer 영역 */
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
+  background-color: #333;
+}
+footer .container {
+  padding: 20px;
+  text-align: center;
+  line-height: 200%;
+  font-size: 14px;
+}
+
+
+/* 슬라이드 영역 */
+
+
+.swiper {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: 600px;
+  height: 450px;
+  z-index: 3;
+}
+
+.swiper-slide {
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: #333;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: #555;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: #444;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: #666;
+}
+
+/* 물ㅇㄹㄹㄹㄹㄹㄹㄹㄹㄹ결 영역??> */
